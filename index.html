@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countryside Casamentos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary d-flex align-items-center gap-2" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        <img src="../img/logo.png" alt="Logo CountrySide Casamentos" class="logo img-fluid" style="max-height: 40px;">
+        Countryside Casamentos
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-none d-lg-block">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="pg/galeria.html">Galeria</a></li>
+          <li class="nav-item"><a class="nav-link" href="pg/servicos.html">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="pg/sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="pg/contato.html">Contato</a></li>
+        </ul>
+        <form class="d-flex ms-3" role="search" onsubmit="event.preventDefault(); alert('Pesquisar: ' + this.querySelector('input').value);">
+            <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar" name="search">
+            <button class="btn btn-primary" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+          </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Offcanvas -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="collapse navbar-collapse d-none d-lg-block">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="pg/galeria.html">Galeria</a></li>
+          <li class="nav-item"><a class="nav-link" href="pg/servicos.html">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="pg/sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="pg/contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!--Section -->
+  <section class="bg-warning-subtle text-center py-5 px-3">
+    <div class="container">
+      <h1 class="display-5 fw-bold">O casamento dos seus sonhos no campo</h1>
+      <p class="lead">Estilo rústico, toque romântico e muito amor envolvido. Nós tornamos seu grande dia inesquecível.</p>
+      <a href="pg/contato.html" class="btn btn-outline-dark btn-lg mt-3"><i class="bi bi-calendar-heart me-2"></i>Agende uma visita</a>
+    </div>
+  </section>
+
+  <!-- Carousel -->
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/foto1.jpg" class="d-block w-100 img-fluid" alt="Casamento 1">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <h5>Cenários Inesquecíveis</h5>
+          <p>Espaços com natureza, simplicidade e beleza.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/foto2.jpg" class="d-block w-100 img-fluid" alt="Casamento 2">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <h5>Momentos Inesquecíveis</h5>
+          <p>Cada detalhe planejado com carinho.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/foto3.jpg" class="d-block w-100 img-fluid" alt="Casamento 3">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <h5>Música, festa e emoção</h5>
+          <p>Uma celebração autêntica ao som do sertanejo.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Cards -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row text-center g-4">
+        <div class="col-12 col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <i class="bi bi-camera2 display-4 text-primary mb-3"></i>
+              <h5 class="card-title">Galeria</h5>
+              <p class="card-text">Veja momentos reais de nossos eventos e se inspire.</p>
+              <a href="pg/galeria.html" class="btn btn-outline-primary">Ver fotos</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <i class="bi bi-stars display-4 text-success mb-3"></i>
+              <h5 class="card-title">Serviços</h5>
+              <p class="card-text">Buffet, música, decoração e tudo que você precisa.</p>
+              <a href="pg/servicos.html" class="btn btn-outline-success">Conhecer</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <i class="bi bi-heart display-4 text-danger mb-3"></i>
+              <h5 class="card-title">Contato</h5>
+              <p class="card-text">Fale com a gente e agende uma reunião sem compromisso.</p>
+              <a href="pg/contato.html" class="btn btn-outline-danger">Entrar em contato</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="text-white mt-5 pt-4 pb-3 bg-brown">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-12 col-md-4 mb-4 mb-md-0">
+          <h5>Countryside Casamentos</h5>
+          <p>Transformamos sonhos em realidade com estilo rústico e muita emoção.</p>
+        </div>
+        <div class="col-12 col-md-4 mb-4 mb-md-0">
+          <h5>Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white text-decoration-none">Início</a></li>
+            <li><a href="pg/sobre.html" class="text-white text-decoration-none">Sobre</a></li>
+            <li><a href="pg/contato.html" class="text-white text-decoration-none">Contato</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <h5>Assine já</h5>
+          <form>
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Seu e-mail">
+              <button class="btn btn-outline-light" type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <h5>Redes Sociais</h5>
+        <a href="https://facebook.com" class="text-white me-3" target="_blank"><i class="bi bi-facebook fs-4"></i></a>
+        <a href="https://instagram.com" class="text-white me-3" target="_blank"><i class="bi bi-instagram fs-4"></i></a>
+        <a href="https://twitter.com" class="text-white" target="_blank"><i class="bi bi-twitter fs-4"></i></a>
+      </div>
+      <div class="text-center mt-3">
+        <small>&copy; 2025 Countryside Casamentos. Todos os direitos reservados.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

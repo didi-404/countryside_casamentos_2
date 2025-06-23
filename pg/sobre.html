@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sobre Nós - Countryside Casamentos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary d-flex align-items-center gap-2" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        <img src="../img/logo.png" alt="Logo CountrySide Casamentos" class="logo img-fluid" style="max-height: 40px;">
+        Countryside Casamentos
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-none d-lg-block">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pg/galeria.html">Galeria</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pg/servicos.html">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pg/sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pg/contato.html">Contato</a></li>
+        </ul>
+        <form class="d-flex ms-3" role="search" onsubmit="event.preventDefault(); alert('Pesquisar: ' + this.querySelector('input').value);">
+            <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar" name="search">
+            <button class="btn btn-primary" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+          </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Offcanvas -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="collapse navbar-collapse d-none d-lg-block">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pg/galeria.html">Galeria</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pg/servicos.html">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pg/sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pg/contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quem Somos -->
+  <section class="py-5">
+    <div class="container">
+      <h1 class="text-center mb-5">Quem Somos?</h1>
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 mb-4 mb-md-0">
+            <img src="../img/foto11.jpg" alt="Equipe Countryside Casamentos" class="img-fluid rounded shadow w-100">
+        </div>
+        <div class="col-12 col-md-6">
+          <p>Somos uma empresa apaixonada por criar experiências únicas em casamentos com temática sertaneja. Nosso time é formado por profissionais com mais de 10 anos de experiência em eventos especiais.</p>
+          <p>Com atenção aos detalhes, oferecemos serviços personalizados que vão desde a escolha do local até o último minuto da festa. Acreditamos que cada história de amor merece uma celebração autêntica, cheia de carinho e tradição.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Valores -->
+  <section class="bg-light py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Nossos Valores</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+              <i class="bi bi-heart-fill display-5 text-danger mb-3"></i>
+              <h5 class="card-title">Amor</h5>
+              <p class="card-text">Fazemos tudo com amor — dos bastidores à cerimônia.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+              <i class="bi bi-gem display-5 text-primary mb-3"></i>
+              <h5 class="card-title">Excelência</h5>
+              <p class="card-text">Prezamos pela perfeição em cada detalhe do seu evento.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+              <i class="bi bi-tree-fill display-5 text-success mb-3"></i>
+              <h5 class="card-title">Tradição & Natureza</h5>
+              <p class="card-text">Resgatamos o charme da roça e do campo com sofisticação.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Accordion -->
+<section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Nossa Jornada</h2>
+  
+      <div class="accordion" id="accordionJornada">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading2014">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2014">
+              2014 - Nasce um sonho
+            </button>
+          </h2>
+          <div id="collapse2014" class="accordion-collapse collapse show" data-bs-parent="#accordionJornada">
+            <div class="accordion-body">
+              <p>Nascemos do sonho de realizar casamentos no campo com alma sertaneja.</p>
+              <img src="../img/foto1.jpg" alt="Ano 2014" class="img-jornada">
+            </div>
+          </div>
+        </div>
+  
+        <!-- 2015 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading2015">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2015">
+              2015 - Primeiro evento oficial
+            </button>
+          </h2>
+          <div id="collapse2015" class="accordion-collapse collapse" data-bs-parent="#accordionJornada">
+            <div class="accordion-body">
+              <p>Realizamos nosso primeiro casamento ao pôr do sol, com decoração rústica e trilha sonora caipira.</p>
+              <img src="../img/foto2.jpg" alt="Ano 2015" class="img-jornada">
+            </div>
+          </div>
+        </div>
+  
+        <!-- 2016 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading2016">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2016">
+              2016 - Crescimento da equipe
+            </button>
+          </h2>
+          <div id="collapse2016" class="accordion-collapse collapse" data-bs-parent="#accordionJornada">
+            <div class="accordion-body">
+              <p>Formamos uma equipe completa com cerimonialistas, fotógrafos e decoradores parceiros.</p>
+              <img src="../img/foto3.jpg" alt="Ano 2016" class="img-jornada">
+            </div>
+          </div>
+        </div>
+  
+        <!-- 2017 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading2017">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2017">
+              2017 - 100 eventos realizados
+            </button>
+          </h2>
+          <div id="collapse2017" class="accordion-collapse collapse" data-bs-parent="#accordionJornada">
+            <div class="accordion-body">
+              <p>Atingimos 100 casamentos com 100% de aprovação dos noivos.</p>
+              <img src="../img/foto4.jpg" alt="Ano 2017" class="img-jornada">
+            </div>
+          </div>
+        </div>
+  
+        <!-- 2018 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading2018">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2018">
+              2018 - Parcerias com músicos regionais
+            </button>
+          </h2>
+          <div id="collapse2018" class="accordion-collapse collapse" data-bs-parent="#accordionJornada">
+            <div class="accordion-body">
+              <p>Firmamos parcerias com duplas sertanejas e bandas ao vivo especializadas.</p>
+              <img src="../img/foto5.jpg" alt="Ano 2018" class="img-jornada">
+            </div>
+          </div>
+        </div>
+  
+        <!-- 2019 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading2019">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2019">
+              2019 - Decoração premiada
+            </button>
+          </h2>
+          <div id="collapse2019" class="accordion-collapse collapse" data-bs-parent="#accordionJornada">
+            <div class="accordion-body">
+              <p>Fomos premiados por uma das melhores decorações rústicas da região sudeste.</p>
+              <img src="../img/foto6.jpg" alt="Ano 2019" class="img-jornada">
+            </div>
+          </div>
+        </div>
+  
+        <!-- 2020 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading2020">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2020">
+              2020 - Expansão para SP
+            </button>
+          </h2>
+          <div id="collapse2020" class="accordion-collapse collapse" data-bs-parent="#accordionJornada">
+            <div class="accordion-body">
+              <p>Expandimos nossos serviços para todo o estado de São Paulo.</p>
+              <img src="../img/foto7.jpg" alt="Ano 2020" class="img-jornada">
+            </div>
+          </div>
+        </div>
+  
+        <!-- 2021 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading2021">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2021">
+              2021 - Casamentos íntimos
+            </button>
+          </h2>
+          <div id="collapse2021" class="accordion-collapse collapse" data-bs-parent="#accordionJornada">
+            <div class="accordion-body">
+              <p>Nos adaptamos à realidade da pandemia realizando mini weddings cheios de emoção.</p>
+              <img src="../img/foto8.jpg" alt="Ano 2021" class="img-jornada">
+            </div>
+          </div>
+        </div>
+  
+        <!-- 2022 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading2022">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2022">
+              2022 - Reconhecimento nacional
+            </button>
+          </h2>
+          <div id="collapse2022" class="accordion-collapse collapse" data-bs-parent="#accordionJornada">
+            <div class="accordion-body">
+              <p>Fomos destaque em revistas especializadas no setor de casamentos e eventos rústicos.</p>
+              <img src="../img/foto9.jpg" alt="Ano 2022" class="img-jornada">
+            </div>
+          </div>
+        </div>
+  
+        <!-- 2023 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading2023">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2023">
+              2023 - Equipe dobrada
+            </button>
+          </h2>
+          <div id="collapse2023" class="accordion-collapse collapse" data-bs-parent="#accordionJornada">
+            <div class="accordion-body">
+              <p>Crescemos e dobramos nossa equipe para atender eventos maiores e mais personalizados.</p>
+              <img src="../img/foto10.jpg" alt="Ano 2023" class="img-jornada">
+            </div>
+          </div>
+        </div>
+  
+        <!-- 2025 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading2025">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2025">
+              2025 - Novos horizontes
+            </button>
+          </h2>
+          <div id="collapse2025" class="accordion-collapse collapse" data-bs-parent="#accordionJornada">
+            <div class="accordion-body">
+              <p>Lançamos nosso novo espaço exclusivo no interior de SP com capacidade para até 500 convidados.</p>
+              <img src="../img/foto11.jpg" alt="Ano 2025" class="img-jornada">
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  <!-- Rodapé -->
+  <footer class="text-white pt-4 pb-3 mt-5 bg-brown">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-12 col-md-4 mb-4 mb-md-0">
+          <h5>Countryside Casamentos</h5>
+          <p>Realizamos eventos com amor, simplicidade e muito estilo no campo.</p>
+        </div>
+        <div class="col-12 col-md-4 mb-4 mb-md-0">
+          <h5>Links úteis</h5>
+          <ul class="list-unstyled">
+            <li><a href="../index.html" class="text-white text-decoration-none">Início</a></li>
+            <li><a href="galeria.html" class="text-white text-decoration-none">Galeria</a></li>
+            <li><a href="contato.html" class="text-white text-decoration-none">Contato</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <h5>Assine já</h5>
+          <form>
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Digite seu e-mail">
+              <button class="btn btn-outline-light" type="submit">Assinar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <h5>Redes Sociais</h5>
+        <a href="https://facebook.com" class="text-white me-3" target="_blank"><i class="bi bi-facebook fs-4"></i></a>
+        <a href="https://instagram.com" class="text-white me-3" target="_blank"><i class="bi bi-instagram fs-4"></i></a>
+        <a href="https://twitter.com" class="text-white" target="_blank"><i class="bi bi-twitter fs-4"></i></a>
+      </div>
+      <div class="text-center mt-3">
+        <small>&copy; 2025 Countryside Casamentos. Todos os direitos reservados.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

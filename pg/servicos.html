@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Serviços - Countryside Casamentos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary d-flex align-items-center gap-2" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        <img src="../img/logo.png" alt="Logo CountrySide Casamentos" class="logo img-fluid" style="max-height: 40px;">
+        Countryside Casamentos
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-none d-lg-block">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pg/galeria.html">Galeria</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pg/servicos.html">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pg/sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pg/contato.html">Contato</a></li>
+        </ul>
+        <form class="d-flex ms-3" role="search" onsubmit="event.preventDefault(); alert('Pesquisar: ' + this.querySelector('input').value);">
+            <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar" name="search">
+            <button class="btn btn-primary" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+          </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Offcanvas -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="collapse navbar-collapse d-none d-lg-block">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pg/galeria.html">Galeria</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pg/servicos.html">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pg/sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="../pg/contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Accordion -->
+
+  <div class="container py-5">
+    <h1 class="text-center mb-5">Nossos Serviços</h1>
+    <div class="accordion mb-5" id="accordionServicos">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingBuffet">
+          <button 
+            class="accordion-button" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#buffet" 
+            aria-expanded="true" 
+            aria-controls="buffet">
+            <i class="bi bi-egg-fried me-2 text-warning"></i> Buffet
+          </button>
+        </h2>
+        <div id="buffet" class="accordion-collapse collapse show" aria-labelledby="headingBuffet" data-bs-parent="#accordionServicos">
+          <div class="accordion-body">
+            Serviço completo de buffet com pratos típicos da roça, comida caseira, e também opções gourmet para agradar todos os paladares.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingDecoracao">
+          <button 
+            class="accordion-button collapsed" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#decoracao" 
+            aria-expanded="false" 
+            aria-controls="decoracao">
+            <i class="bi bi-brush-fill me-2 text-success"></i> Decoração
+          </button>
+        </h2>
+        <div id="decoracao" class="accordion-collapse collapse" aria-labelledby="headingDecoracao" data-bs-parent="#accordionServicos">
+          <div class="accordion-body">
+            Ambientes personalizados com estilo rústico-chique, arranjos florais naturais, iluminação vintage e peças artesanais do interior.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingMusica">
+          <button 
+            class="accordion-button collapsed" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#musica" 
+            aria-expanded="false" 
+            aria-controls="musica">
+            <i class="bi bi-music-note-beamed me-2 text-danger"></i> Música
+          </button>
+        </h2>
+        <div id="musica" class="accordion-collapse collapse" aria-labelledby="headingMusica" data-bs-parent="#accordionServicos">
+          <div class="accordion-body">
+            Duplas sertanejas, DJs especializados e bandas ao vivo para criar a trilha sonora perfeita do seu grande dia.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="row g-4">
+      <div class="col-12 col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <i class="bi bi-camera2 display-4 text-primary mb-3"></i>
+            <h5 class="card-title">Fotografia & Vídeo</h5>
+            <p class="card-text">Registre todos os momentos com profissionais experientes em casamentos no campo.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <i class="bi bi-bus-front-fill display-4 text-secondary mb-3"></i>
+            <h5 class="card-title">Transporte</h5>
+            <p class="card-text">Transporte para convidados e noivos com conforto e segurança, inclusive charretes e carros clássicos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <i class="bi bi-balloon-heart-fill display-4 text-pink mb-3"></i>
+            <h5 class="card-title">Cerimonial Completo</h5>
+            <p class="card-text">Cuidamos de toda a organização para que seu dia seja leve e sem preocupações.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="text-white pt-4 pb-3 mt-5 bg-brown">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Countryside Casamentos</h5>
+          <p>Realizamos eventos com amor, simplicidade e muito estilo no campo.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Links úteis</h5>
+          <ul class="list-unstyled">
+            <li><a href="../index.html" class="text-white text-decoration-none">Início</a></li>
+            <li><a href="sobre.html" class="text-white text-decoration-none">Sobre</a></li>
+            <li><a href="contato.html" class="text-white text-decoration-none">Contato</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Assine já</h5>
+          <form>
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Digite seu e-mail" aria-label="Digite seu e-mail para newsletter">
+              <button class="btn btn-outline-light" type="submit">Assinar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <h5>Redes Sociais</h5>
+        <a href="https://facebook.com" class="text-white me-3" target="_blank"><i class="bi bi-facebook fs-4"></i></a>
+        <a href="https://instagram.com" class="text-white me-3" target="_blank"><i class="bi bi-instagram fs-4"></i></a>
+        <a href="https://twitter.com" class="text-white" target="_blank"><i class="bi bi-twitter fs-4"></i></a>
+      </div>
+      <div class="text-center mt-3">
+        <small>&copy; 2025 Countryside Casamentos. Todos os direitos reservados.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

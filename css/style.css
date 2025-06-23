@@ -1,0 +1,168 @@
+/*Logo*/
+.logo{
+    width: 56px;
+    border-radius: 50%;
+}
+
+/*Icons*/
+footer a:hover i {
+    color: var(--laranja);
+    transition: color 0.3s ease;
+  }
+  
+
+/* Paleta Sertaneja */
+:root {
+    --marrom: #6f4e37;
+    --bege: #f5f0e1;
+    --laranja: #e29539;
+    --verde: #7d9d5a;
+    --branco: #ffffff;
+    --cinza-claro: #f9f9f9;
+  }
+  
+  /* Reset básico */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bege);
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: var(--branco) !important;
+    border-bottom: 2px solid var(--laranja);
+  }
+  .navbar-brand {
+    color: var(--marrom) !important;
+    font-weight: bold;
+  }
+  .navbar-nav .nav-link {
+    color: var(--marrom);
+    transition: color 0.3s ease;
+  }
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link.active {
+    color: var(--laranja) !important;
+  }
+  
+  /* Offcanvas */
+  .offcanvas {
+    background-color: var(--bege);
+  }
+  .offcanvas-title {
+    color: var(--marrom);
+  }
+  .list-group-item a {
+    color: var(--marrom);
+  }
+  .list-group-item a:hover {
+    color: var(--laranja);
+  }
+  
+  /* Cabeçalhos */
+  h1, h2, h3, h4, h5 {
+    color: var(--marrom);
+  }
+  
+  /* Accordion */
+  .accordion-button {
+    background-color: var(--cinza-claro);
+    color: var(--marrom);
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: var(--laranja);
+    color: var(--branco);
+  }
+  
+  /* Botões */
+  .btn-primary {
+    background-color: var(--laranja);
+    border-color: var(--laranja);
+  }
+  .btn-primary:hover {
+    background-color: var(--marrom);
+    border-color: var(--marrom);
+  }
+  .btn-outline-light:hover {
+    background-color: var(--laranja);
+    border-color: var(--laranja);
+    color: var(--branco);
+  }
+  
+  /* Cards */
+  .card {
+    border: none;
+    background-color: var(--branco);
+  }
+  .card-title {
+    color: var(--marrom);
+  }
+
+  .card img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  .card img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Formulários */
+  input.form-control,
+  textarea.form-control {
+    background-color: var(--cinza-claro);
+    border: 1px solid var(--marrom);
+  }
+  
+  /* Footer */
+footer {
+    background-color: var(--marrom);
+    color: var(--bege);
+  }
+  
+  footer h5 {
+    color: var(--laranja);
+    margin-bottom: 1rem;
+  }
+  
+  footer a {
+    color: var(--bege);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: var(--laranja);
+  }
+  
+  footer .input-group input {
+    background-color: var(--bege);
+    border: none;
+    color: var(--marrom);
+  }
+  
+  footer .input-group input::placeholder {
+    color: #a88c77;
+  }
+  
+  footer .input-group .btn {
+    background-color: var(--laranja);
+    color: var(--branco);
+    border: none;
+  }
+  
+  footer .input-group .btn:hover {
+    background-color: var(--verde);
+  }
+  
+  /*Imagens*/
+
+  .img-jornada {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
